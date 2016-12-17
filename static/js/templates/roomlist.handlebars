@@ -1,0 +1,10 @@
+<!-- room -->
+<button id="{{id}}" class="btn" style="border:2px;">{{name}}<span class="badge badge-warning" id="badge{{id}}">{{num}}</span></button>
+<script>
+var label = {{id}};
+$('#label').click(function(){
+    console.log('클릭');
+    $('[href="#label"]').click();
+});
+ </script>
+<!-- End room -->

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+              width:100%;
+              background-size:auto;
+              background-image: url("http://www.matcl.com/files/attach/images/2791205/120/801/002/648b87fe3a9f0362e50033f69e42fb14.jpg");
+            }
+            .well {
+                margin: 1px;
+            }
+        </style>
+        <!--<link rel="stylesheet" href="css/bootstrap-responsive.min.css">-->
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    </head>
+    <body style="margin-bottom: 0px; padding-bottom: 0px;">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <!-- Content -->
+        <div class="row-fluid" >
+            <!-- Header -->
+            <div class="row-fluid" >
+                <div class="span12" >
+
+                    <div class="navbar navbar-inverse navbar-fixed-top">
+                        <div class="navbar-inner">
+                                <a class="brand" href="./index.html">&nbsp;&nbsp;&nbsp;<i class="icon-comment icon-white"></i>&nbsp;!!KHU TALK!!&nbsp;</a>
+                                <ul class="nav pull-right">
+                                  <li class="divider-vertical"></li>
+                                  <li class="">
+                                      <a href="http://khuis.khu.ac.kr/" data-toggle="modal"><i class="icon-star icon-white"></i>&nbsp;종합정보시스템&nbsp;</a>
+                                  </li>
+                                    <li class="divider-vertical"></li>
+                                    <li class="">
+                                        <a href="http://klas.khu.ac.kr/" data-toggle="modal"><i class="icon-star icon-white"></i>&nbsp;KLAS&nbsp;</a>
+                                    </li>
+
+                                    <li class="divider-vertical"></li>
+                                    <li class="">
+                                        <a href="http://www.khuplaza.com/" data-toggle="modal"><i class="icon-star icon-white"></i>&nbsp;KHUPLAZA&nbsp;</a>
+                                    </li>
+                                    <li class="divider-vertical"></li>
+                                    <li class="">
+                                        <a href="#modal_menu" data-toggle="modal"><i class="icon-star icon-white"></i>&nbsp;배달음식전단지&nbsp;</a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header -->
+            <!-- Buttons-->
+
+            <div class="row-fluid">
+                <div class="span12">
+
+
+
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                  <div class="btn-group" style="margin-left:40px;margin-bottom:5px;border:2px;">
+                      <button id="SetNickButton"  class="btn btn-danger" data-toggle="modal" data-target="#modal_setnick"><i class="icon-user"></i>닉네임변경</a></button>
+                            <button id="jointheRoom"  class="btn btn-default" data-toggle="modal" data-target="#modal_joinroom"><i class="icon-plus"></i>방만들기</a></button>
+                            <button id="b_leave_room"  class="btn btn-default" href="#"><i class="icon-minus"></i>방나가기</a></button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rooms -->
+            <div class="row-fluid" >
+                <div class="span12 well" style="margin-left:20px;background-image:url('http://67.media.tumblr.com/tumblr_lsdy3lyIlI1r462w4o1_1280.png');background-size:cover; border:2px;" >
+                    <!-- Tabs -->
+                    <div class="row-fluid">
+                        <div class="span12" style="margin-left:10px;background-image:url('http://67.media.tumblr.com/tumblr_lsdy3lyIlI1r462w4o1_1280.png');background-size:cover; border:0px">
+                            <ul id="rooms_tabs" class="nav nav-tabs">
+                                <!-- Room tab -->
+                                <li id="WaitRoom_tab" class="active"><a href="#WaitRoom" data-toggle="tab" class="text-warning">WaitRoom</a></li>
+                                <!-- End Room tab -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Tabs -->
+                    <!-- Rooms -->
+                    <div id="rooms" class="tab-content"style="margin-left:10px;background-image:url('http://67.media.tumblr.com/tumblr_lsdy3lyIlI1r462w4o1_1280.png');background-size:cover; border:5px" >
+                        <!-- Room -->
+                        <div class="tab-pane active" id="WaitRoom">
+                          <button class="btn btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="margin-bottom:30px;margin-top:10px;border:10px;"  >
+                              공지사항
+                            </button>
+                            <div class="collapse" id="collapseExample">
+                                <div class="well">
+                                    공지사항입니다.
+                                </div>
+                              </div>
+                            <div class="row-fluid">
+                                <div class="span12 well">
+                                    <div id="room_messages" style="min-height:220px; max-height:220px; overflow:auto;">
+                                        <!-- Message -->
+                                        <span class="label label-important">Admin</span>&nbsp;&nbsp;Welcome to the room :)<br/>
+                                        <!-- End Message -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <h3>Current chat User List</h3>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div id="room_users" class="span12">
+                                    <span class="badge badge-important">Admin</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Room -->
+                    </div>
+                    <!-- End Rooms -->
+                </div>
+            </div>
+            <!-- End Rooms -->
+
+            <!-- New message input -->
+            <div class="row-fluid">
+                <div class="span12">
+
+                                <input id="message_text" type="text" class="span9" style="margin-left:20px;margin-top:5px">
+                                <button id="b_send_message" class="btn btn-danger">Send</button>
+
+                </div>
+            </div>
+            <!-- End New message -->
+
+
+
+            <div class="row-fluid">
+                <div class="span12">
+                    <h3>&nbsp; &nbsp; Chat Room List</h3>
+                </div>
+                <div id="room_List" class="span12">
+
+                      <button id="click_waitroom" class="btn btn" style="border:2px;">Waiting<span class="badge badge-warning" id="wait_badge">1</span></button>
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-top:30px">
+      <!-- Indicators -->
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+      <center>  <a href="http://thon.khlug.org/ "><img src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/14441201_1794549537459640_4537552252019807787_n.png?oh=b58364e1b9a64ffe909c9236fada660d&oe=587556A9" alt="khuthonPoster" style="width:400px;height:600px;"> </a></center>
+      </div>
+      <div class="item">
+          <center> <a href="http://www.topcit.or.kr/ "><img src="http://ce.sejong.ac.kr/files/attach/images/9818/289/010/2f33fc5348c66779749512f0109fc78a.jpg" alt="Example2"style="width:400px;height:600px;"></a></center>
+      </div>
+      <div class="item">
+
+      <center>  <a href="http://ce.khu.ac.kr/index.php?hCode=BOARD&bo_idx=2&idx=232&page=view "> <img src="http://ce.khu.ac.kr/upload/board_photo/160330101650_3660_.jpg" alt="Example3"style="width:400px;height:600px;"></a></center>
+      </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only"><</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">></span>
+      </a>
+      </div>
+
+
+
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="hero-unit" style="margin:20px; padding:60px;">
+                        <h1 style="font-size:50px">KHU TALK <small>..Team : ZigiNET</small></h1>
+                        <h1 style="font-size:30px">Moonwon Donghyun Seokhyun</h1>
+                        <br/>
+                        <p style="margin-bottom: 0px"><i class="icon-tasks"></i><strong> Server side:</strong> Node.js, Socket.io, Express, Redis</p>
+                        <p><i class="icon-picture"></i><strong> Client side:</strong> HTML5 Boilerplate, Bootstrap, Handlebars and jQuery</p>
+                        </br>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Info -->
+
+
+
+            <!-- Footer -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <p class="pull-right"><a href="http://khu.ac.kr/"><small>Go to KyungHeeUiversity</small></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            <!--<div style="position:absolute; background-color:black; width:100%; height:10px; bottom:0px;"></div>-->
+            <!-- End Footer -->
+        </div>
+        <!-- End Content -->
+
+        <!-- Join room modal -->
+
+        <div id="modal_joinroom" class="modal hide fade " role="dialog" style="max-width: 350px ; left: 80%; top: 80%;" >
+          <div class="modal-dialog" >
+               <div class="modal-content" >
+                 <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Join room</h3>
+              </div>
+              <div class="modal-body">
+                <input id="room_name" type="text" class="input-xlarge" placeholder="Room name">
+                <p><small>Room will be created if it doesn't exist</small></p>
+              </div>
+              <div class="modal-footer">
+                <a id="b_join_room" href="#" class="btn btn-danger">Join now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- End Join room modal -->
+
+        <!-- Set nick modal -->
+        <div id="modal_setnick" class="modal hide fade " role="dialog" style="max-width: 350px ; left: 80%; top: 80%;" >
+          <div class="modal-dialog" >
+               <div class="modal-content" >
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Set nickname</h3>
+            </div>
+            <div class="modal-body">
+                <input id="nickname" type="text" class="input-xlarge" placeholder="Type your nickname here" >
+                <p><small>Pick up something more cool than anonymous</small></p>
+            </div>
+            <div class="modal-footer">
+                <a id="b_set_nickname" href="#" class="btn btn-danger">Set nickname</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- End Set nick modal -->
+
+
+
+        <div id="modal_menu" class="modal hide fade " role="dialog" style="max-width: 2000px ;top:50% " >
+          <div class="modal-dialog" >
+               <div class="modal-content" >
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>경희대 전단지</h3>
+            </div>
+            <div class="modal-body">
+              <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" style="margin-top:30px">
+        <!-- Indicators -->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+        <div class="item active">
+        <center>  <a href="http://cfs1.tistory.com/upload_control/download.blog?fhandle=YmxvZzM3MTA4QGZzMS50aXN0b3J5LmNvbTovYXR0YWNoLzAvNDkuSlBH"><img src="http://cfs1.tistory.com/upload_control/download.blog?fhandle=YmxvZzM3MTA4QGZzMS50aXN0b3J5LmNvbTovYXR0YWNoLzAvNDkuSlBH" alt="신가네" style="width:400px;height:600px;"></a> </center>
+
+        </div>
+        <div class="item">
+
+            <center><a href="http://cfs1.tistory.com/upload_control/download.blog?fhandle=YmxvZzM3MTA4QGZzMS50aXN0b3J5LmNvbTovYXR0YWNoLzAvMzAuSlBH"> <img src="http://cfs1.tistory.com/upload_control/download.blog?fhandle=YmxvZzM3MTA4QGZzMS50aXN0b3J5LmNvbTovYXR0YWNoLzAvMzAuSlBH" alt="피자가문"style="width:400px;height:600px;"></a></center>
+        </div>
+        <div class="item">
+
+        <center> <a href="http://img.delipartner.kr/store/intro/B30x_intro_20160512160817.jpg"> <img src="http://img.delipartner.kr/store/intro/B30x_intro_20160512160817.jpg" alt="마퐁떡볶이"style="width:400px;height:600px;"></a></center>
+        </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only"><</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">></span>
+        </a>
+        </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.1.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/underscore-min.js"></script>
+        <script src="js/vendor/handlebars-1.0.rc.1.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
